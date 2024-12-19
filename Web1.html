@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <title>Pos</title>
+  </head>
+  <form action = 'Web1.html' method = 'post'>
+    <body style = 'background: linear-gradient(135deg, blue, white); '>
+      <center>
+        
+        
+        <img src = "pusa.jpeg" style = 'height: 250px;
+        width: 250px; border-radius: 50%;'>
+        
+        <br><br><br>
+  <div class="looping-text">
+        <span id="text"></span>
+    </div>
+
+    <script>
+        const messages = ["WELCOME GMCians!", "Have a nice day!"];
+        let index = 0;
+
+        function loopText() {
+            document.getElementById("text").innerText = messages[index];
+            index = (index + 1) % messages.length;
+        }
+
+        setInterval(loopText, 2000);
+        loopText();
+    </script>
+    <br><br>
+    <button class = "button" onclick = "location.href = 'Web3.html'" style = 'font-size: 50px; height: 60px;'>Payments</button>
+    
+    <br><br>
+    <button class = 'button' onclick = "location.href = 'Web2.html'" style = 'font-size: 44px; height: 60px;'>Attendance</button>
+    
+    <br><br>
+    <button class = 'button' style = 'font-size: 45px;
+    height: 60px;'>Dashboard</button>
+    
+    <br><br><br><br><br><br><br><br>
+    Vision:
+    <table border = 1>
+      <hr>
+        We are envisioned to cultivate and ignite a dynamic learning environtment that equips students with knowledge and skills to become ready in the fast changing technology, to seek excellence in their choosen endeavour, develops critical thinking and fair judgement.
+      
+        </table>
+        <br>
+        <table border = 1>
+          Mission:
+          <hr>
+            To create a supportive environment that nurture and empowers the learning spirit of our students to be more productive, goal-driven, academically explorative and thus become a good contributor to his environment fostering respect and love for others.
+      
+          <br><br><br><br><br>
+          <hr>
+          <h6>Maintain and Manage by It department
+          
+          
+      </center>
+    </body>
+  </form>
+</html>
+
+<style>
+      
+          
+          .looping-text {
+            font-size: 2em;
+            animation: loop 4s infinite;
+        }
+        @keyframes loop {
+            0% { opacity: 0; }
+            25% { opacity: 1; }
+            50% { opacity: 1; }
+            75% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+        
+        .button {
+            padding: 15px 30px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .button:hover {
+          transform: scale(1.1);
+        }
+            
+            
+        
+
+        .button:active {
+            transform: scale(0.9);
+        }
+
+        </style>
